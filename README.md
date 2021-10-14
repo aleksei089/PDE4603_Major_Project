@@ -7,9 +7,14 @@ The developer is Aleksei Korotchenko, a MSc Robotics student from Middlesex Univ
 The project presents ...
 
 ## Getting Started Commands (Installation)
-1. ...
+1. Create workspace:
 ```
-start
+mkdir -p ~/RV_Project_ws/src
+```
+2. Clone Robot Vision Project repository:
+```
+cd ~/RV_Project_ws/src
+
 ```
 ## Usage
 1. ...
