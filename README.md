@@ -1,10 +1,12 @@
 # PDE4603 Major Project (Thesis) Repository
 ## Overview
-This repository contains files for the PDE4603 Major Project (Thesis). The topic of the Major Project (Thesis) is "Development of an Automated Sorting System Based on Robot Vision".
+This repository contains files for the PDE4603 Major Project (Thesis). The topic of the work is "Development of an Automated Sorting System Based on Robot Vision". During the project, a robot vision system is being developed. It allows to determine objects' parameters such as colours and shapes. Based on this information, the system signals to the manipulator whether an object should be gripped or not. So, the robot arm automatically grips and sorts the objects with the relevant parameters. The project is being developed in the Robot Operating System (ROS). The simulation is done in Gazebo.  
 
 The developer is Aleksei Korotchenko, a MSc Robotics student from Middlesex University London.
 
-The project contains three folders. The first is MV_Python. It contains machine vision files. The program Test_Hue.py is auxiliary and is intended to determine the range of colour hues. MV_Python.py is the main program. It determines contours, shapes and colours of objects in the real-time video stream. After running it, the user should select the shape and colour of the object for gripping using the console. According to the entered data and the received video stream the programme determines whether the object should be gripped or not and displays it. These programs can be run on a computer. Before running the programs, please check which video stream object is selected.
+The project contains three folders. The first is MV_Python. It contains machine vision files. The program Test_Hue.py is auxiliary and is intended to determine the range of colour hues. MV_Python.py is the main program. It determines contours, shapes and colours of objects in the real-time video stream. After running it, the user should select the shape and colour of the object for gripping using the console. According to the entered data and the received video stream the programme determines whether the object should be gripped or not and displays this information. An example of how the program works is shown below. This program is the basis of the machine vision in the project and it is also used in the Gazebo simulation. Programs can be run on a computer. Before running the programs, please check which video stream object is selected.  
+
+
 
 ## Getting Started Commands (Installation)
 1. Create workspace:
