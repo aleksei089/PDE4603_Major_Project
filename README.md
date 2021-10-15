@@ -7,15 +7,15 @@ The developer is Aleksei Korotchenko, a MSc Robotics student from Middlesex Univ
 The project contains three folders. The first is MV_Python. It contains machine vision files. The program Test_Hue.py is auxiliary and is intended to determine the range of colour hues. MV_Python.py is the main program. It determines contours, shapes and colours of objects in the real-time video stream. After running it, the user should select the shape and colour of the object for gripping using the console. According to the entered data and the received video stream the programme determines whether the object should be gripped or not and displays this information. An example of how the program works, when the required object is a green rectangle, is shown below. This program is the basis of the machine vision in the project and it is also used in the Gazebo simulation. Programs can be run on a computer. Before running the programs, please check which video stream object is selected.  
 
 <p align="center">
-<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/Retesting%20with%20Real%20Objects%20Green%20Rectangle.jpg" width="405">
-  
+<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/Retesting%20with%20Real%20Objects%20Green%20Rectangle.jpg" width="405">  
+
 The second folder is universal_robot. It contains model files of Universal Robots manipulators. One of them is used in the project, in Gazebo simulation. These files are taken from https://github.com/ros-industrial/universal_robot.  
   
 The third folder is ur5_ROS-Gazebo. It contains the files that are needed to simulate robot vision in Gazebo. These include a model of the conveyor belt, camera, gripping objects, storage box, and vacuum gripper. All of these are needed to test and apply robot vision and object sorting in Gazebo simulation. The files were taken from https://github.com/lihuang3/ur5_ROS-Gazebo. In order to implement the created machine vision algorithm and test it in the simulation, some files were changed and some were created. For example, the vision and object spawning algorithms were changed and files for new gripping objects were created. Thus, the simulation is a sequential process. Initially, objects of various shapes and colours are spawned on a conveyor belt and moved towards the camera of manipulator. When an object comes into the camera's lens, the machine vision algorithm determines whether the item should be gripped or not. If the object fits the criteria, then the robot picks it up using a vacuum gripper and moves it into the box. An example of how the simulation works is shown in the illustrations below.  
-  
+
 <p align="center">
-<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/Retesting%20with%20Real%20Objects%20Green%20Rectangle.jpg" width="400">  
-<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/Retesting%20with%20Real%20Objects%20Green%20Rectangle.jpg" width="400">  
+<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/Retesting%20with%20Real%20Objects%20Green%20Rectangle.jpg" width="400">
+<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/Retesting%20with%20Real%20Objects%20Green%20Rectangle.jpg" width="400">
 <img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/Retesting%20with%20Real%20Objects%20Green%20Rectangle.jpg" width="400">  
   
 ## Getting Started Commands (Installation)
