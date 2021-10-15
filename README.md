@@ -7,7 +7,7 @@ The developer is Aleksei Korotchenko, a MSc Robotics student from Middlesex Univ
 The project contains three folders. The first is MV_Python. It contains machine vision files. The program Test_Hue.py is auxiliary and is intended to determine the range of colour hues. MV_Python.py is the main program. It determines contours, shapes and colours of objects in the real-time video stream. After running it, the user should select the shape and colour of the object for gripping using the console. According to the entered data and the received video stream the programme determines whether the object should be gripped or not and displays this information. An example of how the program works, when the required object is a green rectangle, is shown below. This program is the basis of the machine vision in the project and it is also used in the Gazebo simulation. Programs can be run on a computer. Before running the programs, please check which video stream object is selected.  
 
 <p align="center">
-<img src="https://github.com/lihuang3/ur5_notebook/blob/master/media/Retesting with Real Objects Green Rectangle.jpg" width="400">
+<img src="https://github.com/aleksei089/PDE4603_Major_Project/tree/main/ur5_ROS-Gazebo/media/Retesting with Real Objects Green Rectangle.jpg" width="400">
 
 ## Getting Started Commands (Installation)
 1. Create workspace:
