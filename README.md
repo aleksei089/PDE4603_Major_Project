@@ -1,10 +1,10 @@
 # PDE4603 Major Project (Thesis) Repository
 ## Overview
-This repository contains the program files for the PDE4603 Major Project (Thesis).
+This repository contains files for the PDE4603 Major Project (Thesis). The topic of the Major Project (Thesis) is "Development of an Automated Sorting System Based on Robot Vision".
 
 The developer is Aleksei Korotchenko, a MSc Robotics student from Middlesex University London.
 
-The project presents ...
+The project contains three folders. The first is MV_Python. It contains machine vision files. The program Test_Hue.py is auxiliary and is intended to determine the range of colour hues. MV_Python.py is the main program. It determines contours, shapes and colours of objects in the real-time video stream. After running it, the user should select the shape and colour of the object for gripping using the console. According to the entered data and the received video stream the programme determines whether the object should be gripped or not and displays it. These programs can be run on a computer. Before running the programs, please check which video stream object is selected.
 
 ## Getting Started Commands (Installation)
 1. Create workspace:
