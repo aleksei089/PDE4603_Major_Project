@@ -14,9 +14,9 @@ The second folder is universal_robot. It contains model files of Universal Robot
 The third folder is ur5_ROS-Gazebo. It contains the files that are needed to simulate robot vision in Gazebo. These include a model of the conveyor belt, camera, gripping objects, storage box, and vacuum gripper. All of these are needed to test and apply robot vision and object sorting in Gazebo simulation. The files were taken from https://github.com/lihuang3/ur5_ROS-Gazebo. In order to implement the created machine vision algorithm and test it in the simulation, some files were changed and some were created. For example, the vision and object spawning algorithms were changed and files for new gripping objects were created. Thus, the simulation is a sequential process. Initially, objects of various shapes and colours are spawned on a conveyor belt and moved towards the camera of manipulator. When an object comes into the camera's lens, the machine vision algorithm determines whether the item should be gripped or not. If the object fits the criteria, then the robot picks it up using a vacuum gripper and moves it into the box. An example of how the simulation works is shown in the illustrations below.  
   
 <p align="center">
-<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/RV_Blue_Circle_No_Grip.jpg" width="700">
-<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/RV_Orange_Square_Grip.jpg" width="700">
-<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/RV_Orange_Square_Put.jpg" width="700">  
+<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/RV_Blue_Circle_No_Grip.jpg" width="500">
+<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/RV_Orange_Square_Grip.jpg" width="500">
+<img src="https://github.com/aleksei089/PDE4603_Major_Project/blob/main/ur5_ROS-Gazebo/media/RV_Orange_Square_Put.jpg" width="500">  
 
 ## Getting Started Commands (Installation)
 1. Create workspace:
