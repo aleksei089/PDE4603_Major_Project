@@ -40,7 +40,6 @@ Also, you can try catkin_make a few times. All this should help.
 ```
 roslaunch ur5_notebook initialize.launch
 ```
-After starting the simulation, the numbers, that correspond to the shape and colour of the required object for gripping, should be entered into the terminal. For shapes: 1 = Triangle, 2 = Square, 3 = Rectangle, 4 = Circle. For colours: 1 = Red, 2 = Orange, 3 = Yellow, 4 = Green, 5 = Blue,  
-6 = Purple. After that, the video stream from the camera will be started and the simulation will work as planned.  
+After starting the simulation, the numbers, that correspond to the shape and colour of the required object for gripping, should be entered into the terminal. For shapes: 1 = Triangle, 2 = Square, 3 = Rectangle, 4 = Circle. For colours: 1 = Red, 2 = Orange, 3 = Yellow, 4 = Green, 5 = Blue, 6 = Purple. After that, the video stream from the camera will be started and the simulation will work as planned.  
   
 NOTE. This simulation will spawn the following sequence of four objects: a yellow square, a blue circle, a blue rectangle and a blue circle again.  However, it and the used objects can be changed. To do this, change or create new urdf files in ur5_ROS-Gazebo/urdf and change their path in initialize.launch in ur5_ROS-Gazebo/launch. Also if a sequence of more than four objects needs to be created, additions need to be made to blocks_spawner.cpp in ur5_ROS-Gazebo in the same way as for already added objects. The comments in the program should help in this situation.
